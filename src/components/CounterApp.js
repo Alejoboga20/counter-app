@@ -1,16 +1,14 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-const CounterApp = ({ title, subtitle, value }) => {
+const CounterApp = ({ title, subtitle, value = 0 }) => {
   const [count, setCount] = useState(0);
 
-  const handleAdd = () => {
-    setCount(count + 1);
-  };
+  const handleAdd = () => setCount(count + 1);
 
-  const handleSubstrac = () => {
-    setCount(count - 1);
-  };
+  const handleSubstract = () => setCount(count - 1);
+
+  const handleReset = () => setCount(value);
 
   return (
     <>
@@ -19,7 +17,8 @@ const CounterApp = ({ title, subtitle, value }) => {
       <p>Count: {count}</p>
       <div>
         <button onClick={handleAdd}>+</button>
-        <button onClick={handleSubstrac}>-</button>
+        <button onClick={handleSubstract}>-</button>
+        <button onClick={handleReset}>Reset Count</button>
       </div>
     </>
   );
