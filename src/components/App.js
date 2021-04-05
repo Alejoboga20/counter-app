@@ -1,12 +1,16 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const App = () => {
+const App = ({ title }) => {
   return (
     <>
-      <h1>Counter React App</h1>
+      <h1>{title}</h1>
       <p>First App</p>
     </>
   );
 };
 
+App.propTypes = {
+  title: PropTypes.string.isRequired
+};
 export default App;
