@@ -8,7 +8,7 @@ const CounterApp = ({ title, subtitle, value = 0 }) => {
 
   const handleSubstract = () => setCount(count - 1);
 
-  const handleReset = () => setCount(value);
+  const handleReset = () => setCount(0);
 
   return (
     <>
