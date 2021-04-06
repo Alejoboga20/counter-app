@@ -1,3 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Counter App Tests should display CounterApp properly 1`] = `ShallowWrapper {}`;
+exports[`Counter App Tests should display CounterApp properly 1`] = `
+<Fragment>
+  <h1>
+    React Counter App
+  </h1>
+  <p>
+    First App using React JS
+  </p>
+  <p>
+    Count: 
+    0
+  </p>
+  <div>
+    <button
+      onClick={[Function]}
+    >
+      +
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      -
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      Reset Count
+    </button>
+  </div>
+</Fragment>
+`;
