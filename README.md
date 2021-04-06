@@ -10,6 +10,7 @@ In this project were applied the following conecps:
 - PropTypes: Forcing the use of components in the correct way and including Default Props Value.
 - useState Hook.
 - Unit Test using JEST
+- Testing React components with [Enzyme](https://enzymejs.github.io/enzyme/) Using React adapter to work with react 17
   
 
 ## Setup
