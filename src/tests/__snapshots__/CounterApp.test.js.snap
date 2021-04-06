@@ -5,9 +5,9 @@ exports[`Counter App Tests should display CounterApp properly 1`] = `
   <h1>
     React Counter App
   </h1>
-  <p>
+  <h2>
     First App using React JS
-  </p>
+  </h2>
   <p>
     Count: 
     0

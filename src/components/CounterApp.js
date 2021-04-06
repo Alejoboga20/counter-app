@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 const CounterApp = ({ title, subtitle, value = 0 }) => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(value);
 
   const handleAdd = () => setCount(count + 1);
 
@@ -13,7 +13,7 @@ const CounterApp = ({ title, subtitle, value = 0 }) => {
   return (
     <>
       <h1>{title}</h1>
-      <p>{subtitle}</p>
+      <h2>{subtitle}</h2>
       <p>Count: {count}</p>
       <div>
         <button onClick={handleAdd}>+</button>
