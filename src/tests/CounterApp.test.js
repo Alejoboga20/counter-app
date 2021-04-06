@@ -4,8 +4,13 @@ import { shallow } from 'enzyme';
 import CounterApp from '../../src/components/CounterApp';
 
 describe('Counter App Tests', () => {
+  let wrapper = shallow(<CounterApp title='React Counter App' value={0} />);
+
+  beforeEach(() => {
+    wrapper = shallow(<CounterApp title='React Counter App' value={0} />);
+  });
+
   test('should display CounterApp properly', () => {
-    const wrapper = shallow(<CounterApp title='React Counter App' value={0} />);
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -25,5 +30,17 @@ describe('Counter App Tests', () => {
     );
     const text = wrapper.find('p').text();
     expect(text).toBe(`Count: ${initialValue}`);
+  });
+
+  test('should increment the count by 1', () => {
+    wrapper.find('button').at(0).simulate('click');
+    const text = wrapper.find('p').text();
+    expect(text).toBe(`Count: 1`);
+  });
+
+  test('should decrement the count by 1', () => {
+    wrapper.find('button').at(1).simulate('click');
+    const text = wrapper.find('p').text();
+    expect(text).toBe(`Count: -1`);
   });
 });
