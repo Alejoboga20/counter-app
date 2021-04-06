@@ -9,6 +9,7 @@ In this project were applied the following conecps:
 - Div wrappers and fragments (Intro to High Order Components).
 - PropTypes: Forcing the use of components in the correct way and including Default Props Value.
 - useState Hook.
+- Unit Test using JEST
   
 
 ## Setup
