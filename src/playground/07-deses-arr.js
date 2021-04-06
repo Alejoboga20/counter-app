@@ -6,12 +6,3 @@ export const returnArray = () => {
 };
 
 const [letras, numeros] = returnArray();
-
-const usState = valor => {
-  return [
-    valor,
-    () => {
-      console.log('Hola Mundo');
-    }
-  ];
-};
