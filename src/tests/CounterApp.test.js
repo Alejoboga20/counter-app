@@ -43,4 +43,10 @@ describe('Counter App Tests', () => {
     const text = wrapper.find('p').text();
     expect(text).toBe(`Count: -1`);
   });
+
+  test('should reset the count', () => {
+    wrapper.find('button').at(2).simulate('click');
+    const text = wrapper.find('p').text();
+    expect(text).toBe(`Count: 0`);
+  });
 });
